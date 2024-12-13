@@ -4,7 +4,12 @@
   "description": "HONMANI NANMO WAKARAN",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'No build steps defined'"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "mkdirp": "^1.0.4"
   },
   "keywords": [],
   "author": "",
