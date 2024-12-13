@@ -26,3 +26,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRIAL_PROJECT_01_9DB97 }}
           projectId: trial-project-01-9db97
           channelId: live
+
+      - name: Notify completion
+        run: echo "Deployment to Firebase Hosting completed successfully!"
