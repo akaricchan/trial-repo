@@ -32,5 +32,9 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+          payload: |
+            {
+              "text": "<@channel> Deployment to Firebase Hosting completed successfully!"
+            }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
