@@ -33,7 +33,7 @@ jobs:
           status: ${{ job.status }}
           author_name: firebase Hostingへのデプロイ処理結果
           # fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          fields: ref
+          fields: repo,commit,massage,ref
           mention: 'channel'
           if_mention: 'always'
         env:
