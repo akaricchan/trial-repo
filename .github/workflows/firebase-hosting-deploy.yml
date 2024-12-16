@@ -31,8 +31,9 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: ${{ job.status }}
-          # author_name: firebase Hostingへのデプロイ処理結果
+          author_name: firebase Hostingへのデプロイ処理結果
           # fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+          fields: ref
           mention: 'channel'
           if_mention: 'always'
         env:
